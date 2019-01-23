@@ -56,13 +56,13 @@ namespace EmailClient
             {
                 if (textBox4.Text == "" || textBox5.Text == "" || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
                 {
-                    MessageBox.Show("All fields need to have date before sending.");
+                    MessageBox.Show(@"All fields need to have date before sending.");
                 }
 
 
                 if (!textBox1.Text.Contains("@gmail.com"))
                 {
-                    MessageBox.Show("You need to provide an email @gmail.com");
+                    MessageBox.Show(@"You need to provide an email @gmail.com");
                     return;
                 }
 
@@ -71,8 +71,11 @@ namespace EmailClient
                 {
                     From = new MailAddress(textBox1.Text),
                     Subject = textBox5.Text,
-                    Body = textBox4.Text
+                    Body = textBox4.Text,
                 };
+
+                var attachment = new System.Net.Mail.Attachment("c:/textfile.txt");
+                sendMessage.Attachments.Add(attachment);
 
                 foreach (var s in textBox3.Text.Split(';'))
                 {
@@ -92,8 +95,8 @@ namespace EmailClient
             catch
             {
                 MessageBox.Show(
-                    "There was an error sending the message, check if you have entered the credentials correctly.",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    @"There was an error sending the message, check if you have entered the credentials correctly.",
+                    @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -105,6 +108,17 @@ namespace EmailClient
         private void label8_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var attachment = new OpenFileDialog();
+
+            if (attachment.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show(@"You have successfully attached a file.");
+            }
+
         }
     }
 }
