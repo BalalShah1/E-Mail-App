@@ -1,0 +1,10 @@
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\bin\Debug\EmailClient.exe.config
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\bin\Debug\EmailClient.exe
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\bin\Debug\EmailClient.pdb
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\obj\Debug\EmailClient.csprojAssemblyReference.cache
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\obj\Debug\EmailClient.Form1.resources
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\obj\Debug\EmailClient.Properties.Resources.resources
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\obj\Debug\EmailClient.csproj.GenerateResource.cache
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\obj\Debug\EmailClient.csproj.CoreCompileInputs.cache
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\obj\Debug\EmailClient.exe
+E:\Visual Studio 2017\source\repos\EmailClient\EmailClient\obj\Debug\EmailClient.pdb
